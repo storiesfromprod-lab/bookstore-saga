@@ -1,0 +1,7 @@
+# One Kafka broker (KRaft mode, no ZooKeeper) for local development.
+services:
+  kafka:
+    image: apache/kafka:3.8.0
+    container_name: bookstore-kafka
+    ports:
+      - "9092:9092"
